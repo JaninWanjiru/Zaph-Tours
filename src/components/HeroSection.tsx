@@ -5,7 +5,7 @@ function HeroSection() {
     <Box
       sx={{
         height: "90vh",
-        backgroundImage: 'url(/hero2.jpg)',
+        backgroundImage: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(/hero2.jpg)`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         display: "flex",
@@ -23,8 +23,9 @@ function HeroSection() {
       <Typography variant="h6" >
         Explore the World with Us
       </Typography>
-      <Button variant="contained" color="secondary" sx={{ mt: 3 }}>
-        View Destinations
+      <Button variant="contained" color="secondary" sx={{ mt: 3 ,
+    borderRadius: '1rem'}}>
+        Start your adventure
       </Button>
     </Box>
   );
