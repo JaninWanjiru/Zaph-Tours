@@ -2,7 +2,7 @@ import { Box, Grid, Typography } from "@mui/material";
 
 function AboutSection() {
   return (
-    <Box sx={{ padding: { xs: 4, md: 8 } }}>
+    <Box sx={{ padding: { xs: 2, md: 4 } }}>
       <Typography
         variant="h4"
         fontWeight="bold"

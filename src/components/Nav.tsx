@@ -1,26 +1,30 @@
-import { AppBar, Toolbar, Stack, Link, IconButton} from "@mui/material";
-
+import { AppBar, Toolbar, Stack, IconButton } from "@mui/material";
+import { Link } from "react-router-dom";
 function Nav() {
   return (
     <AppBar position="static" color="primary">
       <Toolbar>
-        <IconButton sx={{ marginRight:'auto'}}>
-          ZaphTours
-        </IconButton>
-        <Stack direction='row' spacing={3}> 
-          <Link variant='body1' underline='none' href="#" sx={{ color: "pink" }}>
+        <IconButton sx={{ marginRight: "auto" }}>ZaphTours</IconButton>
+        <Stack direction="row" spacing={3}>
+          <Link to="/" style={{ color: "pink", textDecoration: "none" }}>
             Home
           </Link>
-          <Link variant='body1' underline='none' href="#" sx={{ color: "pink" }}>
+          <Link
+            to="/destinations"
+            style={{ color: "pink", textDecoration: "none" }}
+          >
             Destinations
           </Link>
-          <Link variant='body1' underline='none' href="#" sx={{ color: "pink" }}>
+          <Link
+            to="/tripTypes"
+            style={{ color: "pink", textDecoration: "none" }}
+          >
             Trips
           </Link>
-          <Link variant='body1' underline='none' href="#" sx={{ color: "pink" }}>
+          <Link to="/blog" style={{ color: "pink", textDecoration: "none" }}>
             Blogs
           </Link>
-          <Link variant='body1' underline='none' href="#" sx={{ color: "pink" }}>
+          <Link to="/contact" style={{ color: "pink", textDecoration: "none" }}>
             Contact
           </Link>
         </Stack>
@@ -30,4 +34,3 @@ function Nav() {
 }
 
 export default Nav;
-
