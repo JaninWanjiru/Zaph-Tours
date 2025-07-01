@@ -15,7 +15,7 @@ const theme = createTheme({
       contrastText: "#fff",
     },
     secondary: {
-      main: "#97B067",
+      main: "#55a174",
       contrastText: "#fff",
     },
   },
@@ -30,7 +30,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/destinations" element={<DestinationsPage />} />
           <Route path="/tripTypes" element={<TripTypesPage />} />
-          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blogs" element={<BlogPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
         <footer>

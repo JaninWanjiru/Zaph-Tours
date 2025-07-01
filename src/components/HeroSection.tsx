@@ -4,7 +4,7 @@ function HeroSection() {
   return (
     <Box
       sx={{
-        height: "90vh",
+        height: "100vh",
         backgroundImage: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(/hero2.jpg)`,
         backgroundSize: "cover",
         backgroundPosition: "center",

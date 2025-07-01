@@ -2,9 +2,9 @@ import { AppBar, Toolbar, Stack, IconButton } from "@mui/material";
 import { Link } from "react-router-dom";
 function Nav() {
   return (
-    <AppBar position="static" color="primary">
+    <AppBar position="fixed" color="primary">
       <Toolbar>
-        <IconButton sx={{ marginRight: "auto" }}>ZaphTours</IconButton>
+        <IconButton sx={{ marginRight: "auto", color: 'pink'}}>ZaphTours</IconButton>
         <Stack direction="row" spacing={3}>
           <Link to="/" style={{ color: "pink", textDecoration: "none" }}>
             Home
