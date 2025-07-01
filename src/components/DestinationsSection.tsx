@@ -66,7 +66,7 @@ function DestinationsSection() {
           <Card sx={{ width: "300px" }}>
             <CardMedia component="img" height="200px" image={destination.image} />
             <CardContent >
-              <Typography variant="h6">{destination.name}</Typography>
+              <Typography variant="h6" color="primary">{destination.name}</Typography>
               <Typography variant="body1">
                 {destination.description}
               </Typography>
