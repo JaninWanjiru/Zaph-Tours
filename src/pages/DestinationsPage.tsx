@@ -1,9 +1,9 @@
+import AllDestinations from "../components/All Destinations"
+
 function DestinationsPage() {
   return (
-    <div>
-        <h1>Welcome to Destinations Page</h1>
-    </div>
+    <AllDestinations />
   )
 }
 
-export default DestinationsPage
+export default DestinationsPage;

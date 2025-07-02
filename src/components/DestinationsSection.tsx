@@ -38,7 +38,7 @@ const destinations = [
   {
     name: "Nairobi National Park",
     image: "/Nairobi park.jpg",
-    description: "A unique park to spot wildlife in the background",
+    description: "A unique park located in a city, to spot wildlife in the background",
     price: "Ksh.4300",
   },
   {
@@ -68,7 +68,7 @@ function DestinationsSection() {
       <Grid container spacing={3}>
         {destinations.map((destination, idx) => (
           <Grid size={{ xs: 12, sm: 6, md: 4 }} key={idx}>
-            <Card sx={{ width: "300px" }}>
+            <Card sx={{ width: "100%" }}>
               <CardMedia
                 component="img"
                 height="200px"
@@ -78,10 +78,10 @@ function DestinationsSection() {
                 <Typography variant="h6" color="primary">
                   {destination.name}
                 </Typography>
-                <Typography variant="body1">
+                <Typography variant="body1" color="text.secondary">
                   {destination.description}
                 </Typography>
-                <Typography variant="subtitle2" color="primary">
+                <Typography variant="subtitle2" color="primary" pt='.5rem'>
                   {destination.price}
                 </Typography>
               </CardContent>

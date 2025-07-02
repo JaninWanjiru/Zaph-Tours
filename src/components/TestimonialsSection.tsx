@@ -57,7 +57,7 @@ function TestimonialsSection() {
                     {testimonial.name}
                   </Typography>
                 </Stack>
-                <Typography variant="body1">“{testimonial.quote}”</Typography>
+                <Typography variant="body1" color="text.secondary">“{testimonial.quote}”</Typography>
               </CardContent>
               <Rating
                 value={testimonial.rating}
