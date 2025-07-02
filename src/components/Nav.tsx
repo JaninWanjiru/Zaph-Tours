@@ -21,7 +21,7 @@ function Nav() {
           >
             Trips
           </Link>
-          <Link to="/blog" style={{ color: "pink", textDecoration: "none" }}>
+          <Link to="/blogs" style={{ color: "pink", textDecoration: "none" }}>
             Blogs
           </Link>
           <Link to="/contact" style={{ color: "pink", textDecoration: "none" }}>
