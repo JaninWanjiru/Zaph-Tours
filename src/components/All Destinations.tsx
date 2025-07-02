@@ -71,7 +71,7 @@ const destinations = [
 function AllDestinations() {
   return (
     <Box component="section" sx={{ padding: { xs: 2, md: 4 }, bgcolor: "#f5f5f5"  }}>
-      <Typography variant="h3" align="center" color="primary" gutterBottom sx={{ mt: 6 }}>
+      <Typography variant="h4" align="center" color="primary" fontWeight="bold" gutterBottom sx={{ mt: 6 }}>
         Our Destinations
       </Typography>
 

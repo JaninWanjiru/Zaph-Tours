@@ -9,7 +9,8 @@ function Newsletter() {
         p: 4,
         ml: 'auto',
         mr: 'auto',
-        textAlign: 'center'
+        textAlign: 'center',
+        width: '700px'
       }}
     >
       <Typography variant="h4" fontWeight="bold" gutterBottom>
@@ -32,6 +33,7 @@ function Newsletter() {
           label="Enter your email"
           variant="filled"
           size="small"
+          fullWidth
           sx={{
             backgroundColor: "white",
             borderRadius: 1,

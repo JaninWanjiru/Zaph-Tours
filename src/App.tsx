@@ -3,19 +3,19 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import DestinationsPage from "./pages/DestinationsPage";
 import TripTypesPage from "./pages/TripTypesPage";
-import BlogPage from "./pages/BlogPage";
 import ContactPage from "./pages/ContactPage";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 import "./App.css";
 
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#235339",
+      main: "#526E48",
       contrastText: "#fff",
     },
     secondary: {
-      main: "#55a174",
+      main: "#81A263",
       contrastText: "#fff",
     },
   },
@@ -30,13 +30,9 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/destinations" element={<DestinationsPage />} />
           <Route path="/tripTypes" element={<TripTypesPage />} />
-          <Route path="/blogs" element={<BlogPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
-        <footer>
-          Made with &hearts; by{" "}
-          <a href="https://github.com/JaninWanjiru">Jane Ndung'u</a>
-        </footer>
+        <Footer />
       </BrowserRouter>
     </ThemeProvider>
   );

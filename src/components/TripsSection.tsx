@@ -84,7 +84,7 @@ const tripTypes = [
 function TripsSection(){
   return (
     <Box component="section" sx={{ padding: { xs: 2, md: 4 }, bgcolor: "#f5f5f5" }}>
-      <Typography variant="h3" align="center"  color="primary"sx={{ mt: 6, mb:2 }}>
+      <Typography variant="h4" align="center"  color="primary" fontWeight="bold" sx={{ mt: 6, mb:1.3 }}>
         Our Trip Packages
       </Typography>
 
