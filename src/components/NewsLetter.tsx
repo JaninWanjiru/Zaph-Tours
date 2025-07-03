@@ -4,13 +4,12 @@ function Newsletter() {
   return (
     <Box
       sx={{
-        backgroundColor: "primary.main", 
-        color: "white",
+        backgroundColor: "#DFD0B8",
+        color: "primary.main",
         p: 4,
-        ml: 'auto',
-        mr: 'auto',
-        textAlign: 'center',
-        width: '700px'
+        ml: "auto",
+        mr: "auto",
+        textAlign: "center",
       }}
     >
       <Typography variant="h4" fontWeight="bold" gutterBottom>
@@ -21,7 +20,7 @@ function Newsletter() {
       </Typography>
 
       <Stack
-        direction={{ xs: "column", sm: "row" }}
+        direction="row"
         spacing={2}
         justifyContent="center"
         alignItems="center"
@@ -33,7 +32,6 @@ function Newsletter() {
           label="Enter your email"
           variant="filled"
           size="small"
-          fullWidth
           sx={{
             backgroundColor: "white",
             borderRadius: 1,
@@ -44,7 +42,7 @@ function Newsletter() {
           variant="contained"
           color="secondary"
           size="medium"
-          sx={{ p: 1.5}}
+          sx={{ p: 1.5 }}
         >
           Subscribe
         </Button>

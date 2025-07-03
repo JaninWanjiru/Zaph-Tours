@@ -38,7 +38,8 @@ const destinations = [
   {
     name: "Nairobi National Park",
     image: "/Nairobi park.jpg",
-    description: "A unique park located in a city, to spot wildlife in the background",
+    description:
+      "A unique park located in a city, to spot wildlife in the background",
     price: "Ksh.4300",
   },
   {
@@ -81,7 +82,7 @@ function DestinationsSection() {
                 <Typography variant="body1" color="text.secondary">
                   {destination.description}
                 </Typography>
-                <Typography variant="subtitle2" color="primary" pt='.5rem'>
+                <Typography variant="subtitle2" color="primary" pt=".5rem">
                   {destination.price}
                 </Typography>
               </CardContent>
@@ -90,7 +91,7 @@ function DestinationsSection() {
                   size="small"
                   variant="contained"
                   href="/destinations"
-                  sx={{ borderRadius: "1rem"}}
+                  sx={{ borderRadius: "1rem" }}
                 >
                   Explore Now
                 </Button>

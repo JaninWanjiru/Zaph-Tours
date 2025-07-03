@@ -11,11 +11,11 @@ import "./App.css";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#526E48",
+      main: "#a05a3c",
       contrastText: "#fff",
     },
     secondary: {
-      main: "#81A263",
+      main: "#f9a825",
       contrastText: "#fff",
     },
   },
