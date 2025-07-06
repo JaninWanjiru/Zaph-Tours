@@ -96,7 +96,7 @@ function DestinationsSection() {
                 <Button
                   size="small"
                   variant="contained"
-                  href="/destinations"
+                  href=""
                   sx={{ borderRadius: "1rem" }}
                 >
                   Explore Now

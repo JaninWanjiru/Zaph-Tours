@@ -116,7 +116,7 @@ function TripsSection() {
                 <Typography variant="h6" color="primary">
                   {trip.title}
                 </Typography>
-                <Typography variant="body1" sx={{ mt: 1, mb: 1 }}>
+                <Typography variant="body1" color="text.secondary" sx={{ mt: 1, mb: 1 }}>
                   {trip.description}
                 </Typography>
                 <Typography variant="subtitle2" color="secondary" fontWeight="bold">
