@@ -19,7 +19,14 @@ function Nav() {
   return (
     <AppBar position="fixed" color="primary">
       <Toolbar>
-        <IconButton size="large" sx={{ marginRight: "auto", color: "inherit" }}>
+        <IconButton
+          size="large"
+          sx={{
+            marginRight: "auto",
+            color: "inherit",
+            fontFamily: '"Merienda", cursive',
+          }}
+        >
           ZaphTours
         </IconButton>
 
@@ -31,25 +38,33 @@ function Nav() {
         >
           <NavLink
             to="/"
-            className={({ isActive }) => (isActive ? "active-link link" : "link")}
+            className={({ isActive }) =>
+              isActive ? "active-link link" : "link"
+            }
           >
             Home
           </NavLink>
           <NavLink
             to="/destinations"
-            className={({ isActive }) => (isActive ? "active-link link" : "link")}
+            className={({ isActive }) =>
+              isActive ? "active-link link" : "link"
+            }
           >
             Destinations
           </NavLink>
           <NavLink
             to="/tripTypes"
-            className={({ isActive }) => (isActive ? "active-link link" : "link")}
+            className={({ isActive }) =>
+              isActive ? "active-link link" : "link"
+            }
           >
             Trips
           </NavLink>
           <NavLink
             to="/contact"
-            className={({ isActive }) => (isActive ? "active-link link" : "link")}
+            className={({ isActive }) =>
+              isActive ? "active-link link" : "link"
+            }
           >
             Contact
           </NavLink>
@@ -76,7 +91,9 @@ function Nav() {
                   <NavLink
                     to="/"
                     style={{ color: "#a05a3c" }}
-                    className={({ isActive }) => (isActive ? "active-link link" : "link")}
+                    className={({ isActive }) =>
+                      isActive ? "active-link link" : "link"
+                    }
                   >
                     Home
                   </NavLink>
@@ -85,7 +102,9 @@ function Nav() {
                   <NavLink
                     to="/destinations"
                     style={{ color: "#a05a3c" }}
-                    className={({ isActive }) => (isActive ? "active-link link" : "link")}
+                    className={({ isActive }) =>
+                      isActive ? "active-link link" : "link"
+                    }
                   >
                     Destinations
                   </NavLink>
@@ -94,7 +113,9 @@ function Nav() {
                   <NavLink
                     to="/tripTypes"
                     style={{ color: "#a05a3c" }}
-                    className={({ isActive }) => (isActive ? "active-link link" : "link")}
+                    className={({ isActive }) =>
+                      isActive ? "active-link link" : "link"
+                    }
                   >
                     Trips
                   </NavLink>
@@ -103,7 +124,9 @@ function Nav() {
                   <NavLink
                     to="/contact"
                     style={{ color: "#a05a3c" }}
-                    className={({ isActive }) => (isActive ? "active-link link" : "link")}
+                    className={({ isActive }) =>
+                      isActive ? "active-link link" : "link"
+                    }
                   >
                     Contact
                   </NavLink>

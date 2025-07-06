@@ -19,6 +19,21 @@ const theme = createTheme({
       contrastText: "#fff",
     },
   },
+  typography: {
+    fontFamily: '"Merienda", cursive',
+    h3: {
+      fontSize: "3.5rem",
+    },
+    h4: {
+      fontWeight: 700,
+    },
+    h6: {
+      fontWeight: 700,
+    },
+    body1: {
+      fontSize: "1rem",
+    },
+  },
 });
 
 function App() {
