@@ -9,44 +9,53 @@ import {
   ListItem,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useState } from "react";
+import "../App.css";
 
 function Nav() {
   const [drawerOpen, setDrawerOpen] = useState(false);
+
   return (
     <AppBar position="fixed" color="primary">
       <Toolbar>
         <IconButton size="large" sx={{ marginRight: "auto", color: "inherit" }}>
           ZaphTours
         </IconButton>
+
+        {/* desktop navigation */}
         <Stack
           direction="row"
           spacing={3}
           sx={{ display: { xs: "none", md: "flex" } }}
         >
-          <Link to="/" style={{ color: "inherit", textDecoration: "none" }}>
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? "active-link link" : "link")}
+          >
             Home
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/destinations"
-            style={{ color: "inherit", textDecoration: "none" }}
+            className={({ isActive }) => (isActive ? "active-link link" : "link")}
           >
             Destinations
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/tripTypes"
-            style={{ color: "inherit", textDecoration: "none" }}
+            className={({ isActive }) => (isActive ? "active-link link" : "link")}
           >
             Trips
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/contact"
-            style={{ color: "inherit", textDecoration: "none" }}
+            className={({ isActive }) => (isActive ? "active-link link" : "link")}
           >
             Contact
-          </Link>
+          </NavLink>
         </Stack>
+
+        {/* mobile navigation*/}
         <Box sx={{ display: { xs: "flex", md: "none" } }}>
           <IconButton
             size="large"
@@ -61,59 +70,43 @@ function Nav() {
             open={drawerOpen}
             onClose={() => setDrawerOpen(false)}
           >
-            <Box
-              sx={{
-                p: 2,
-              }}
-            >
+            <Box sx={{ p: 2 }}>
               <List>
                 <ListItem>
-                  <Link
-                    style={{
-                      textDecoration: "none",
-                      color: "#a05a3c",
-                      fontWeight: "bold",
-                    }}
+                  <NavLink
                     to="/"
+                    style={{ color: "#a05a3c" }}
+                    className={({ isActive }) => (isActive ? "active-link link" : "link")}
                   >
                     Home
-                  </Link>
+                  </NavLink>
                 </ListItem>
                 <ListItem>
-                  <Link
-                    style={{
-                      textDecoration: "none",
-                      color: "#a05a3c",
-                      fontWeight: "bold",
-                    }}
+                  <NavLink
                     to="/destinations"
+                    style={{ color: "#a05a3c" }}
+                    className={({ isActive }) => (isActive ? "active-link link" : "link")}
                   >
                     Destinations
-                  </Link>
+                  </NavLink>
                 </ListItem>
                 <ListItem>
-                  <Link
-                    style={{
-                      textDecoration: "none",
-                      color: "#a05a3c",
-                      fontWeight: "bold",
-                    }}
+                  <NavLink
                     to="/tripTypes"
+                    style={{ color: "#a05a3c" }}
+                    className={({ isActive }) => (isActive ? "active-link link" : "link")}
                   >
                     Trips
-                  </Link>
+                  </NavLink>
                 </ListItem>
                 <ListItem>
-                  <Link
-                    style={{
-                      textDecoration: "none",
-                      color: "#a05a3c",
-                      fontWeight: "bold",
-                    }}
+                  <NavLink
                     to="/contact"
+                    style={{ color: "#a05a3c" }}
+                    className={({ isActive }) => (isActive ? "active-link link" : "link")}
                   >
                     Contact
-                  </Link>
+                  </NavLink>
                 </ListItem>
               </List>
             </Box>

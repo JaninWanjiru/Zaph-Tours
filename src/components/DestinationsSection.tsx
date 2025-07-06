@@ -74,6 +74,12 @@ function DestinationsSection() {
                 component="img"
                 height="200px"
                 image={destination.image}
+                sx={{
+                  transition: "transform 0.4s ease-in-out",
+                  "&:hover": {
+                    transform: "scale(1.05)",
+                  },
+                }}
               />
               <CardContent>
                 <Typography variant="h6" color="primary">

@@ -119,7 +119,7 @@ function TripsSection() {
                 <Typography variant="body1" sx={{ mt: 1, mb: 1 }}>
                   {trip.description}
                 </Typography>
-                <Typography variant="subtitle2" color="secondary">
+                <Typography variant="subtitle2" color="secondary" fontWeight="bold">
                   {trip.pricing}
                 </Typography>
               </CardContent>
