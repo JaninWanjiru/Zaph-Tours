@@ -1,4 +1,4 @@
-import {     
+import {
   Box,
   Typography,
   Grid,
@@ -7,7 +7,7 @@ import {
   CardContent,
   CardActions,
   Paper,
-  Button
+  Button,
 } from "@mui/material";
 import { Link } from "react-router-dom";
 
@@ -70,8 +70,18 @@ const destinations = [
 
 function AllDestinations() {
   return (
-    <Box component="section" sx={{ padding: { xs: 2, md: 4 }, bgcolor: "#f5f5f5"  }}>
-      <Typography variant="h4" align="center" color="primary" fontWeight="bold" gutterBottom sx={{ mt: 6 }}>
+    <Box
+      component="section"
+      sx={{ padding: { xs: 2, md: 4 }, bgcolor: "#f5f5f5" }}
+    >
+      <Typography
+        variant="h4"
+        align="center"
+        color="primary"
+        fontWeight="bold"
+        gutterBottom
+        sx={{ mt: 6 }}
+      >
         Our Destinations
       </Typography>
 
@@ -84,6 +94,12 @@ function AllDestinations() {
                 image={destination.image}
                 alt={destination.name}
                 height="200"
+                sx={{
+                  transition: "transform 0.4s ease-in-out",
+                  "&:hover": {
+                    transform: "scale(1.05)",
+                  },
+                }}
               />
               <CardContent>
                 <Typography variant="h6" color="primary">

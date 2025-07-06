@@ -80,29 +80,43 @@ const tripTypes = [
   },
 ];
 
-
-function TripsSection(){
+function TripsSection() {
   return (
-    <Box component="section" sx={{ padding: { xs: 2, md: 4 }, bgcolor: "#f5f5f5" }}>
-      <Typography variant="h4" align="center"  color="primary" fontWeight="bold" sx={{ mt: 6, mb:1.3 }}>
+    <Box
+      component="section"
+      sx={{ padding: { xs: 2, md: 4 }, bgcolor: "#f5f5f5" }}
+    >
+      <Typography
+        variant="h4"
+        align="center"
+        color="primary"
+        fontWeight="bold"
+        sx={{ mt: 6, mb: 1.3 }}
+      >
         Our Trip Packages
       </Typography>
 
       <Grid container spacing={4}>
         {tripTypes.map((trip, idx) => (
-          <Grid size={{xs:12, sm:6, md:4}} key={idx}>
-            <Card >
+          <Grid size={{ xs: 12, sm: 6, md: 4 }} key={idx}>
+            <Card>
               <CardMedia
                 component="img"
                 height="200"
                 image={trip.images}
                 alt={trip.title}
+                sx={{
+                  transition: "transform 0.4s ease-in-out",
+                  "&:hover": {
+                    transform: "scale(1.05)",
+                  },
+                }}
               />
               <CardContent>
                 <Typography variant="h6" color="primary">
                   {trip.title}
                 </Typography>
-                <Typography variant="body1" sx={{ mt:1, mb:1 }}>
+                <Typography variant="body1" sx={{ mt: 1, mb: 1 }}>
                   {trip.description}
                 </Typography>
                 <Typography variant="subtitle2" color="secondary">
@@ -115,6 +129,6 @@ function TripsSection(){
       </Grid>
     </Box>
   );
-};
+}
 
 export default TripsSection;

@@ -37,6 +37,10 @@ function AboutSection() {
               width: "100%",
               borderRadius: 2,
               boxShadow: 3,
+              transition: "transform 0.3s ease-in-out",
+              "&:hover": {
+                transform: "scale(1.05)",
+              },
             }}
           />
         </Grid>
